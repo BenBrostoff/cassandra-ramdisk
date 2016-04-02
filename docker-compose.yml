@@ -1,7 +1,0 @@
-cassandra-ramdisk:
-  privileged: true
-  build: .
-  ports:
-    - "9160"
-    - "9042"
-    - "7199"
