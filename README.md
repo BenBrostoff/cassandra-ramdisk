@@ -9,6 +9,9 @@ cassandra-ramdisk:
   # mode to mount ramdisk
   privileged: true
   image: benbrostoff/cassandra-ramdisk
+  # you can pass in a ramdisk size in MBs
+  environment:
+    - RAMDISK_SIZE=2000
   ports:
     - "9160"
     - "9042"
