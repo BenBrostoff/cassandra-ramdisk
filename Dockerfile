@@ -1,4 +1,4 @@
-FROM cassandra:3
+FROM cassandra:latest
 
 RUN apt-get -y update && apt-get install -y sudo
 RUN	mkdir -p /tmp/ramdisk && \
